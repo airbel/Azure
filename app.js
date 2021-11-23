@@ -1,5 +1,6 @@
 'use strict'
 const switcher = document.querySelector('.btn');
+const divget = document.getElementById("chug")
 
 switcher.addEventListener('click', function() {
     document.body.classList.toggle('dark-theme')
@@ -12,5 +13,9 @@ switcher.addEventListener('click', function() {
         this.textContent = "Light";
     }
 
+    divget.innerHTML("噗噗噗")
     console.log('current class name: ' + className);
 });
+
+
+
