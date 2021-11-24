@@ -1,6 +1,6 @@
 'use strict'
-const switcher = document.querySelector('.btn');
-const divget = document.getElementById("chug")
+const switcher = document.querySelector('.btu');
+const byw = document.getElementById("btn")
 
 switcher.addEventListener('click', function() {
     document.body.classList.toggle('dark-theme')
@@ -12,10 +12,17 @@ switcher.addEventListener('click', function() {
     else {
         this.textContent = "Light";
     }
-
-    divget.innerHTML("噗噗噗")
     console.log('current class name: ' + className);
 });
 
+byw.addEventListener('click',function(){
+    const AChset = document.getElementById("chug") ;
+    var ACh = AChset.textContent;
+    if (ACh === "哈哈哈") {
+        document.getElementById("chug").innerHTML = ("哈x3");
+    }else if (ACh === "哈x3"){
+        document.getElementById("chug").innerHTML = ("哈哈哈");
+    }
+});
 
 
